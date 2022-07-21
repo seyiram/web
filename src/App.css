@@ -1,38 +1,262 @@
-.App {
-  text-align: center;
+.font-face-global {
+  font-family: "Amplitude Wide Regular";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #35344c;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pageone {
+  width: 70%;
+  margin: 0 auto;
+}
+.pageone--container {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pageone .pageone--header-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.pageone .pageone--header-info .pageone--header-info-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.pageone .pageone--header-info .pageone--image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pageone--image img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .pageone--header-info {
+    display: flex;
+    flex-direction: column-reverse;
   }
-  to {
-    transform: rotate(360deg);
+  .pageone--image {
+    margin-top: 3rem;
   }
+}
+
+.pageone--property-details-text h1 {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.property--details-subtitle {
+  margin-top: 0.8rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.pageone--property-name-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.pageone--property-name-details label,
+.pageone--property-address-details label,
+.pageone--property-type label,
+.pageone--unit-info label {
+  font-size: 1.1rem;
+}
+
+.pageone--property-name-details input,
+.pageone--property-address-details input {
+  padding: 1rem 2rem;
+  border: 1px solid #c3c1d7;
+  border-radius: 0.2rem;
+  margin-top: 0.5rem;
+}
+
+.pageone--property-address-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.2rem;
+}
+
+.pageone--property-type {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.6rem;
+}
+
+.pageone--property-type-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.pageone--property-type-buttons button {
+  padding: 3% 4%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  outline: 0;
+  border-radius: 0.15rem;
+  border: 1px solid #c3c1d7;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.pageone--property-type-buttons button svg {
+  width: 100%;
+}
+
+.pageone--property-type-buttons button:focus,
+.pageone--property-type-buttons svg:focus {
+  border: 1px solid #3f25c8;
+  color: #3f25c8;
+  opacity: 0.6;
+}
+
+@media (max-width: 1024px) {
+  .pageone--property-type-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.pageone--unit-info {
+  margin-top: 2rem;
+}
+
+.pageone--unit-info-card {
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  padding: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.pageone--unit-info-top,
+.pageone--unit-info-bottom {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.pageone--unit-info-bottom {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.pageone--unit-info-name,
+.pageone--unit-info-rent,
+.pageone--unit-info-deposit,
+.pageone--unit-info-lease,
+.pageone--unit-info-beds,
+.pageone--unit-info-baths,
+.pageone--unit-square-feet,
+.pageone--unit-info-availability,
+.pageone--unit-info-vacancy {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageone--unit-info-top label,
+.pageone--unit-info-bottom label {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+.pageone--unit-info-top input:focus,
+.pageone--unit-info-bottom input:focus {
+  color: #3f25c8;
+  outline: 1px solid #3f25c8;
+}
+
+.pageone--unit-info-top input {
+  padding: 8% 20%;
+  border: 1px solid #c3c1d7;
+}
+
+.pageone--unit-info-bottom input {
+  padding: 8% 25%;
+  border: 1px solid #c3c1d7;
+}
+
+.input-icon {
+  float: left;
+  margin-left: -109px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+}
+.input-icon-calendar {
+  float: left;
+  margin-left: -76px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+}
+
+.arrow-down {
+  float: right;
+  position: relative;
+  margin-left: 109px;
+  margin-top: -20px;
+  z-index: 2;
+}
+
+.per-month::after {
+  content: "/mo";
+  float: right;
+  position: relative;
+  margin-right: 9px;
+  margin-top: -14px;
+  z-index: 2;
+  font-size: 0.6rem;
+}
+
+.pageone--unit-info-lease input,
+.pageone--unit-square-feet input,
+.pageone--unit-info-name input {
+  padding: 8% 10%;
+}
+
+.navigation--buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.navigation--buttons button {
+  border-radius: 2rem;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  background-color: #fff;
+  border: 1px solid #35344c;
+}
+
+.navigation--buttons button a {
+  text-decoration: none;
+}
+
+.navigation--buttons button:focus,
+.navigation-buttons a:focus,
+.navigation--buttons button:hover {
+  background-color: #3f25c8;
+  color: #fff;
+  outline: none;
 }
