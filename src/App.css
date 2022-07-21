@@ -120,7 +120,7 @@
 }
 
 .pageone--property-type-buttons button svg {
-  width: 100%;
+  margin-right: 1rem
 }
 
 .pageone--property-type-buttons button:focus,
