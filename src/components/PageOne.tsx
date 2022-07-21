@@ -144,7 +144,6 @@ const PageOne = () => {
             </div>
             <div className="pageone--unit-info-rent">
               <label htmlFor="">Rent</label>
-              {/* <i className="fa-light fa-dollar-sign"></i> */}
               <input type="text" />
               <FontAwesomeIcon icon={faDollarSign} className="input-icon" />
               <span className="per-month"></span>
@@ -195,8 +194,8 @@ const PageOne = () => {
         </div>
       </div>
       <div className="navigation--buttons">
-        <button><a href="/#">back</a></button>
-        <button><a href="/#">continue</a></button>
+        <a href="/#"><button>back</button></a>
+        <a href="/#"><button>continue</button></a>
       </div>
       </div>
     </div>
