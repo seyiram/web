@@ -195,7 +195,7 @@ const PageOne = () => {
       </div>
       <div className="navigation--buttons">
         <a href="/#"><button>back</button></a>
-        <a href="/#"><button>continue</button></a>
+        <a href="/pagetwo"><button>continue</button></a>
       </div>
       </div>
     </div>

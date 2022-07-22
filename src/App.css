@@ -9,6 +9,7 @@
   color: #35344c;
 }
 
+/* Page One */
 .pageone {
   width: 70%;
   margin: 0 auto;
@@ -120,7 +121,7 @@
 }
 
 .pageone--property-type-buttons button svg {
-  margin-right: 1rem
+  margin-right: 1rem;
 }
 
 .pageone--property-type-buttons button:focus,
@@ -283,4 +284,37 @@
   background-color: #3f25c8;
   color: #fff;
   outline: none;
+}
+
+/* Page Two */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card--content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  flex-direction: column;
+}
+
+.card--content-cars {
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-width: 300px;
+  height: auto;
+  margin: 0 2rem;
+}
+
+.card--content-cars p {
+  margin: 1rem;
+}
+
+.card--content-first-element p {
+font-size: 1.4rem;
+text-decoration: underline;
+text-decoration-color: #3f25c8;
 }
