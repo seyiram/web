@@ -147,7 +147,7 @@
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 85%;
   padding: 1rem;
   flex-wrap: wrap;
   margin-bottom: 2rem;
@@ -188,6 +188,10 @@
   .pageone--unit-square-feet,
   .pageone--unit-info-availability,
   .pageone--unit-info-vacancy {
+    width: 100%;
+  }
+
+  .pageone--unit-info-card {
     width: 100%;
   }
 }
