@@ -201,6 +201,7 @@
 .pageone--unit-info-bottom label {
   margin-bottom: 0.4rem;
   font-size: 1rem;
+  margin-top: 6%;
 }
 
 .pageone--unit-info-top input:focus,
@@ -239,7 +240,7 @@
   float: right;
   position: relative;
   margin-left: 81%;
-  margin-top: -17px;
+  margin-top: -11%;
   z-index: 2;
 }
 
